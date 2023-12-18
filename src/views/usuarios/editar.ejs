@@ -1,0 +1,30 @@
+<div id="formulario-editar-usuario">
+
+
+    <form name="usuario" action="/usuarios/editar/<%= usuario.id %>" method="POST">
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Mail</label>
+            <input type="text" class="form-control" name="email" value="<%= usuario.email%>">
+        </div>
+
+        <div class="mb-3">
+            <label for="pass" class="form-label">Password</label>
+            <input type="text" class="form-control" name="pass" value="<%= usuario.pass%>">
+        </div>
+
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <textarea type="text" class="form-control" name="nombre"><%=<usuario.nombre></usuario> %></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <textarea type="text" class="form-control" name="apellido"><%=<usuario.apellido></usuario> %></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+
+
+</div>
